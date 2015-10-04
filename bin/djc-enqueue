@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'dj_cron'
+
+DjCron::Enqueuer.new.enqueue(ARGV)

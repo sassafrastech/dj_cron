@@ -18,7 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-`djc-enqueue FooJob BarJob ...`.
+From Rails project directory, run:
+
+    bundle exec djc-enqueue FooJob BarJob ...
 
 `FooJob` and `BarJob` etc. should be DelayedJob jobs in your `app/jobs` directory.
 

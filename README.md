@@ -1,6 +1,6 @@
 # DjCron
 
-TODO: Write a gem description
+Enqueues DelayedJob jobs easily from cron without loading the full Rails environment.
 
 ## Installation
 
@@ -18,11 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+`djc-enqueue FooJob BarJob ...`.
+
+`FooJob` and `BarJob` etc. should be DelayedJob jobs in your `app/jobs` directory.
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/dj_cron/fork )
+1. Fork it ( https://github.com/sassafrastech/dj_cron/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

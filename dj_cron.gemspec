@@ -8,13 +8,13 @@ Gem::Specification.new do |spec|
   spec.version       = DjCron::VERSION
   spec.authors       = ["Tom Smyth"]
   spec.email         = ["tom@sassafras.coop"]
-  spec.summary       = %q{Write a short summary. Required.}
-  spec.description   = %q{Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Enqueues DelayedJob jobs easily from cron.}
+  spec.description   = %q{Enqueues DelayedJob jobs easily from cron without loading the full Rails environment.}
+  spec.homepage      = "https://github.com/sassafrastech/dj_cron"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
-  spec.executables   = ['djw-enqueue']
+  spec.executables   = ['djc-enqueue']
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
